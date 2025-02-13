@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e0e0e0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-image: url('/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 550px;
+    width: 100%;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #444;
+    font-weight: 500;
+}
+
+input, select {
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 80%;
+    max-width: 350px;
+    background-color: #f8f8f8;
+    color: #444;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus, select:focus {
+    border-color: #4CAF50;
+    background-color: #e8f5e9;
+    outline: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+select {
+    appearance: none;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"%3E%3Cpath fill="none" d="M6 8l4 4 4-4z"/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    padding-right: 40px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+select:hover {
+    background-color: #f1f1f1;
+}
+
+button {
+    padding: 14px 24px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 80%;
+    max-width: 350px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+#swapCurrenciesBtn {
+    background-color: #28a745;
+}
+
+#swapCurrenciesBtn:hover {
+    background-color: #218838;
+}
+
+/* Espaciado entre botones */
+button + button {
+    margin-top: 10px;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+#result h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#result p {
+    font-size: 1.3rem;
+    color: #555;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    input, select, button {
+        width: 100%;
+        max-width: none;
+    }
+}
