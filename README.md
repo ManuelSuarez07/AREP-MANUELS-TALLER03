@@ -1,6 +1,6 @@
-# Currency Converter Web Server
+# Application Server Architectures Workshop: Object Meta-Protocols, IoC Pattern, and Reflection Applied in a Currency Converter
 
-This project implements a simple web server (`WebServerT1`) that serves static files and provides an API for currency conversion using the `CurrencyConverter` class. It also includes a front-end web interface with an interactive currency converter.
+This project implements a Web server (WebServerT3) that serves static files and provides an API for managing currency exchange rates and performing currency conversions using the CurrencyConverter class. The API allows adding new currencies and retrieving all current exchange rates. Additionally, the project includes a front-end web interface featuring an interactive currency converter for user-friendly conversions.
 
 ## Features
 
@@ -15,24 +15,35 @@ This project implements a simple web server (`WebServerT1`) that serves static f
 ```
 ├── src/
 │   ├── main
-│   │   ├── java/com/eci/webservert1/
-│   │   │   ├── WebServerT1.java         # Web server implementation
-│   │   │   ├── CurrencyConverter.java   # Currency conversion logic
-│   │   ├── resources/
-│   │   │   ├── images
-│   │   │   │   ├── Initial.png             
-│   │   │   │   ├── Result.png
-│   │   │   │   ├── Test.png                           
-│   │   │   ├── static
-│   │   │   │   ├── index.html           # Front-end interface
-│   │   │   │   ├── style.css            # Styling
-│   │   │   │   ├── script.js            # Front-end logic
-│   │   │   │   ├── fondo.jpg            # Background image
-│   ├── test
-│   │   ├── java
-│   │   │   ├──WebServerAndCurrencyConverterTest.java  # Unit tests
-├── README.md                            # Project documentation
-└── pom.xml                              # Maven configuration (if applicable)
+│   │   ├── java/com/eci/
+│   │   │   ├── Annotation/
+│   │   │   │   ├── GetMapping.java         # Annotation for handling GET requests
+│   │   │   │   ├── PostMapping.java        # Annotation for handling POST requests
+│   │   │   │   ├── RequestBody.java        # Annotation for binding request bodies
+│   │   │   │   ├── RequestParam.java       # Annotation for binding request parameters
+│   │   │   │   ├── RestController.java     # Annotation to mark controller classes
+│   │   │   ├── Controller/
+│   │   │   │   ├── CurrencyController.java # API for managing currencies and exchange rates
+│   │   │   │   ├── GreetingController.java # Example controller for basic greeting responses
+│   │   │   ├── Server/
+│   │   │   │   ├── CurrencyConverter.java  # Logic for currency conversion
+│   │   │   │   ├── Request.java            # Handles HTTP requests
+│   │   │   │   ├── Response.java           # Handles HTTP responses
+│   │   │   │   ├── Service.java            # Core service for web server operations
+│   │   │   │   ├── WebServerT3.java        # Main web server implementation
+│   ├── resources/
+│   │   ├── images/
+│   │   │   ├── fondo.jpg                   # Background image
+│   │   ├── static/
+│   │   │   ├── index.html                  # Front-end interface for currency conversion
+│   │   │   ├── script.js                   # Front-end logic for interactions
+│   │   │   ├── style.css                   # Styling for the front-end
+│   ├── test/
+│   │   ├── java/
+│   │   │   ├── WebServerAndCurrencyConverterTest.java # Unit tests for server and converter
+├── README.md                              # Project documentation
+├── pom.xml                                # Maven configuration
+
 ```
 ## Architecture
 
@@ -51,9 +62,9 @@ This project implements a simple web server (`WebServerT1`) that serves static f
 
 ### Prerequisites
 
-1. **Java Development Kit (JDK)**
+1. **Java Development Kit 23 (JDK23)**
    * Ensure you have the following installed:
-      - Java Development Kit (JDK)
+      - Java Development Kit (JDK23)
         ```sh
         java -version
         ```
@@ -99,6 +110,37 @@ This project implements a simple web server (`WebServerT1`) that serves static f
 
 ![image](src/main/resources/images/Result.png)
 
+### Check URI
+We can use too the following requests to test the services:
+
+convert 5840 EUR to COP
+  ```sh
+   http://localhost:35000/convertir?fromCurrency=EUR&toCurrency=COP&amount=5840
+  ```
+  ![image](src/main/resources/images/Uri.png)
+
+### Test and Query API Endpoints
+We can use the following requests to test the services:
+
+Greeting Service, access the greeting service with:
+  ```sh
+  http://localhost:35000/api/greeting  
+  ```
+  ![image](src/main/resources/images/Greeting.png)
+Add a New Currency (POST), add a new currency and its exchange rate with the following request:
+  ```sh
+  POST http://localhost:35000/api/currencies  
+Body:  
+{  
+    "name": "newCurrency",  
+    "rate": 123.45  
+}   
+  ```
+Get All Currencies (GET), retrieve all available currencies and their exchange rates:
+  ```sh
+  http://localhost:35000/api/currencies  
+  ```
+  ![image](src/main/resources/images/Get.png)
 ## Running the Tests
 
 To execute unit tests, use JUnit:
@@ -121,5 +163,5 @@ mvn test
 
 ## Version
 
-Version 1.0
+Version 3.0
 
