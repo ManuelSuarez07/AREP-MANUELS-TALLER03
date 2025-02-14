@@ -1,5 +1,12 @@
-C:\Users\Manuel S\Desktop\Noveno Semestre\AREP\Laboratorios\AREP-MANUELS-TALLER02\src\main\java\com\eci\webservert2\CurrencyConverter.java
-C:\Users\Manuel S\Desktop\Noveno Semestre\AREP\Laboratorios\AREP-MANUELS-TALLER02\src\main\java\com\eci\webservert2\Request.java
-C:\Users\Manuel S\Desktop\Noveno Semestre\AREP\Laboratorios\AREP-MANUELS-TALLER02\src\main\java\com\eci\webservert2\Response.java
-C:\Users\Manuel S\Desktop\Noveno Semestre\AREP\Laboratorios\AREP-MANUELS-TALLER02\src\main\java\com\eci\webservert2\Service.java
-C:\Users\Manuel S\Desktop\Noveno Semestre\AREP\Laboratorios\AREP-MANUELS-TALLER02\src\main\java\com\eci\webservert2\WebServerT2.java
+C:\Users\Manuel S\Desktop\Noveno Semestre\AREP\Laboratorios\AREP-MANUELS-TALLER03\src\main\java\com\eci\Annotation\GetMapping.java
+C:\Users\Manuel S\Desktop\Noveno Semestre\AREP\Laboratorios\AREP-MANUELS-TALLER03\src\main\java\com\eci\Annotation\PostMapping.java
+C:\Users\Manuel S\Desktop\Noveno Semestre\AREP\Laboratorios\AREP-MANUELS-TALLER03\src\main\java\com\eci\Annotation\RequestBody.java
+C:\Users\Manuel S\Desktop\Noveno Semestre\AREP\Laboratorios\AREP-MANUELS-TALLER03\src\main\java\com\eci\Annotation\RequestParam.java
+C:\Users\Manuel S\Desktop\Noveno Semestre\AREP\Laboratorios\AREP-MANUELS-TALLER03\src\main\java\com\eci\Annotation\RestController.java
+C:\Users\Manuel S\Desktop\Noveno Semestre\AREP\Laboratorios\AREP-MANUELS-TALLER03\src\main\java\com\eci\Controller\CurrencyController.java
+C:\Users\Manuel S\Desktop\Noveno Semestre\AREP\Laboratorios\AREP-MANUELS-TALLER03\src\main\java\com\eci\Controller\GreetingController.java
+C:\Users\Manuel S\Desktop\Noveno Semestre\AREP\Laboratorios\AREP-MANUELS-TALLER03\src\main\java\com\eci\Http\CurrencyConverter.java
+C:\Users\Manuel S\Desktop\Noveno Semestre\AREP\Laboratorios\AREP-MANUELS-TALLER03\src\main\java\com\eci\Http\Request.java
+C:\Users\Manuel S\Desktop\Noveno Semestre\AREP\Laboratorios\AREP-MANUELS-TALLER03\src\main\java\com\eci\Http\Response.java
+C:\Users\Manuel S\Desktop\Noveno Semestre\AREP\Laboratorios\AREP-MANUELS-TALLER03\src\main\java\com\eci\Http\Service.java
+C:\Users\Manuel S\Desktop\Noveno Semestre\AREP\Laboratorios\AREP-MANUELS-TALLER03\src\main\java\com\eci\Http\WebServerT3.java

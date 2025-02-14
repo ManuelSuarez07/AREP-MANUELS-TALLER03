@@ -3,14 +3,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.Eci</groupId>
-    <artifactId>WebServerT2</artifactId>
+    <artifactId>WebServerT3</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>23</maven.compiler.release>
-        <exec.mainClass>com.eci.webservert2.WebServerT2</exec.mainClass>
+        <exec.mainClass>com.eci.Http.WebServerT3</exec.mainClass>
     </properties>
 
     <dependencies>
@@ -42,5 +42,5 @@
         </plugins>
     </build>
 
-    <name>WebServerT2</name>
+    <name>WebServerT3</name>
 </project>
